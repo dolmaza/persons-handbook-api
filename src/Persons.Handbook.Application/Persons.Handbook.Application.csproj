@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="Dapper.SqlBuilder" Version="2.0.78" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Persons.Handbook.Domain\Persons.Handbook.Domain.csproj" />
+    <ProjectReference Include="..\Persons.Handbook.Infrastructure\Persons.Handbook.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\CityCommands\Create\" />
+    <Folder Include="Commands\ConnectionCommands\ConnectPersons\" />
+    <Folder Include="Commands\Idempotency\" />
+    <Folder Include="Commands\PersonCommands\Create\" />
+    <Folder Include="Commands\PersonCommands\UploadPersonImage\" />
+    <Folder Include="Commands\PersonCommands\Update\" />
+    <Folder Include="Queries\ConnectionQueries\Dtos\" />
+    <Folder Include="Queries\Models\" />
+    <Folder Include="Queries\PersonQueries\GetPersonById\" />
+    <Folder Include="Queries\PersonQueries\Dtos\" />
+    <Folder Include="Queries\PersonQueries\DataModels\" />
+  </ItemGroup>
+
+</Project>
